@@ -6,10 +6,9 @@ import router from './src/modules/crud/crud.route.js'
 const app = express()
 const port = 3000
 
-
+app.use(cors({ origin: 'http://crud-mongoose-ten.vercel.app' }));
 
 app.use(express.json())
-app.use(cors({ origin: 'https://crud-mongoose-ten.vercel.app/' }));
 app.use(router)
 
 
