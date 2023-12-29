@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 export let dbConnection =()=> {
-    mongoose.connect('mongodb://127.0.0.1:27017/Database_Crud')
+    mongoose.connect('mongodb+srv://crud12:1I4sIDAcNOPPk5sn@cluster0.h7uidom.mongodb.net/all-data?retryWrites=true&w=majority')
     .then(() => { console.log('Database Connected ') })
-    .catch((err) => console.log("Erorr ...", err))
+    .catch((err) => console.log("Erorr ..."))
 }
