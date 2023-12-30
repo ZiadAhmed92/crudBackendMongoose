@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 let mySchema =  mongoose.Schema({
     name: String,
-    email: Number,
+    email: String,
     password: String,
 })
 
